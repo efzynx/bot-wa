@@ -1,3 +1,8 @@
+# WhatsApp Bot
 .wwebjs_auth
 .wwebjs_cache
 node_modules
+
+# Docker
+auth_data/
+.docker/

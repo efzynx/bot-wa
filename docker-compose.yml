@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: whatsapp-bot
+    restart: unless-stopped
+    volumes:
+      - ./auth_data:/usr/src/app/.wwebjs_auth
+    environment:
+      - TZ=UTC
+    # Add any other environment variables if needed
